@@ -11,3 +11,7 @@ Recipes live in `recipes/<kebab-case-title>.md`, one file per recipe, built from
 - **Recipes are never final.** `status` is `draft`, `in-progress`, or `tested` — never `final`. New notes merge into the existing file; contradictions with earlier notes go to **Open questions** rather than silently overwriting.
 - **Keep the raw input.** Append each drop of source notes verbatim under **Source notes**, dated, and add a **Changelog** line. Bump `updated`.
 - Leave template sections in place with `TBD` even when empty.
+
+## Git
+
+- Work on `develop`. Commit and push freely, partial work included; something saved beats nothing.
