@@ -1,0 +1,59 @@
+# Recipe data. Copy to recipes/<slug>/recipe.yaml, then run: python3 scripts/render.py
+# Rule: never extrapolate. Anything not in the source stays null / empty — it renders as TBD.
+
+title: null
+status: draft            # draft | in-progress | tested — never "final"
+tags: []
+servings: null
+time:
+  prep: null
+  cook: null
+  total: null
+created: null            # YYYY-MM-DD
+updated: null            # YYYY-MM-DD
+
+sources: []
+#  - date: YYYY-MM-DD
+#    description: where it came from (person, URL, book, chat, own notes)
+#    text: |              # verbatim text notes, if any
+#      ...
+#    files:               # verbatim files kept in recipes/<slug>/sources/
+#      - path: sources/example.png
+#        caption: what this file covers
+
+summary: null
+
+equipment: []
+#  - Large pot
+
+ingredients: []
+#  - group: null           # optional heading, e.g. "Sauce"; null for a single ungrouped list
+#    items:
+#      - qty: null         # "2.5", "10–11", "½" — string; null renders TBD
+#        unit: null        # kg, tbsp, cloves...
+#        name: null        # required once known
+#        prep: null        # "sliced", "cut into 4–5 cm cubes"
+#        optional: false
+#        note: null        # alternatives, provenance, caveats
+
+steps: []
+#  - section: null         # optional heading, e.g. "Blanch"
+#    items:
+#      - text: "Bake at {TBD} °C for 20 min."   # inline gaps: write {TBD}
+#        details: []       # sub-points: tips, cues, alternatives
+#      - gap: "missing step(s) between blanching and browning"   # explicit gap marker
+
+notes: []
+
+tables: []               # extra reference tables, e.g. quantity versions from the source
+#  - title: Quantity versions
+#    columns: [Ingredient, Version A, Version B]
+#    rows:
+#      - [Dark soy, 3 tbsp, 7 tbsp]
+#    footnote: null
+
+open_questions: []
+
+changelog: []
+#  - date: YYYY-MM-DD
+#    text: created from ...

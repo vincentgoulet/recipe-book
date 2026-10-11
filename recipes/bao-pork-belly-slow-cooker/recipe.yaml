@@ -1,0 +1,225 @@
+title: Slow cooker braised pork belly for bao
+status: draft
+tags: [pork, slow-cooker, braise, bao, chinese, taiwanese]
+servings: 20–25 bao (2.5 kg batch); 8–10 bao (original 1–1.2 kg version)
+time:
+  prep: null
+  cook: 3–4 h on High (slow cooker) + {TBD} stovetop
+  total: null
+created: 2026-10-11
+updated: 2026-10-11
+
+sources:
+  - date: 2026-07-24
+    description: ChatGPT conversation (screenshots added 2026-10-11)
+    files:
+      - path: sources/chatgpt-2026-07-24-01.png
+        caption: request, original ingredients, step 1
+      - path: sources/chatgpt-2026-07-24-02.png
+        caption: steps 1–4
+      - path: sources/chatgpt-2026-07-24-03.png
+        caption: step 5, bao assembly
+      - path: sources/chatgpt-2026-07-24-04.png
+        caption: restaurant-quality upgrades, flavour notes, start of 2.5 kg scaling
+      - path: sources/chatgpt-2026-07-24-05.png
+        caption: 2.5 kg ingredients and method, using flank
+      - path: sources/chatgpt-2026-07-24-06.png
+        caption: '"pushed" quantities, 3–4 h on High (cut off)'
+      - path: sources/chatgpt-2026-07-24-07.png
+        caption: salted broth quantities, caramelizing granulated sugar
+      - path: sources/chatgpt-2026-07-24-08.png
+        caption: aggressive reduction tips
+
+summary: >-
+  Taiwanese/Japanese kakuni-style braised pork belly for bao, aiming for a restaurant taste.
+  The pork is blanched, browned in caramel, slow-cooked in soy, Shaoxing wine and spices,
+  then glazed in the braising liquid after it has been strained and reduced. The source
+  says the final reduction is the step that matters most.
+
+equipment:
+  - Large pot (blanching)
+  - Pan (caramel, browning, deglazing)
+  - Slow cooker
+  - Strainer
+  - Saucepan (the widest one you have, for reducing)
+  - Skewer or chopstick (doneness check)
+
+# Quantities: 2.5 kg pork with salted broth, the latest version in the source.
+# Other versions are in tables → Quantity versions.
+ingredients:
+  - group: Braise
+    items:
+      - qty: "2.5"
+        unit: kg
+        name: pork belly + pork flank
+        prep: belly cut into 4–5 cm cubes, flank into 5–6 cm pieces
+        note: aim for about 60% belly and 40% flank if possible
+      - qty: "7"
+        unit: tbsp
+        name: dark soy sauce
+        note: mostly for colour; the source says not to increase it
+      - qty: "10–11"
+        unit: tbsp
+        name: light soy sauce
+        note: for salted broth; use 14 tbsp / 210 ml if the broth is low-sodium
+      - qty: "500"
+        unit: ml
+        name: Shaoxing wine
+      - qty: "180–200"
+        unit: g
+        name: rock sugar
+        note: granulated sugar works; it was used on 2026-07-24
+      - qty: "100"
+        unit: g
+        name: fresh ginger
+        prep: sliced
+      - qty: "12"
+        unit: cloves
+        name: garlic
+        prep: crushed
+      - qty: "5"
+        name: star anise
+      - qty: "2"
+        name: cassia sticks (or cinnamon sticks)
+      - qty: "1.2"
+        unit: L
+        name: salted chicken broth
+        note: just enough to come about ¾ of the way up / mostly cover the pork
+      - qty: "3"
+        unit: tbsp
+        name: oyster sauce
+        note: the salted-broth list doesn't mention it; see Open questions
+      - qty: "2"
+        unit: tsp
+        name: toasted sesame oil
+        prep: added after reducing
+        note: not in the salted-broth list; see Open questions
+      - qty: "3"
+        name: bay leaves
+        optional: true
+        note: not in the salted-broth list; see Open questions
+      - qty: "2"
+        unit: tsp
+        name: Sichuan peppercorns
+        optional: true
+        note: not in the salted-broth list; see Open questions
+      - qty: "2–3"
+        name: whole scallions
+        prep: cut into large pieces, added for the braise
+        note: not in the salted-broth list; see Open questions
+  - group: For serving
+    items:
+      - qty: null
+        name: Steamed bao buns
+        note: fresh bao are better than frozen supermarket ones
+      - qty: null
+        name: Quick pickled cucumber
+        note: "recipe: {TBD}"
+      - qty: null
+        name: Fresh coriander
+      - qty: null
+        name: Spring onions
+      - qty: null
+        name: Crushed roasted peanuts
+        optional: true
+      - qty: null
+        name: Hoisin sauce
+        optional: true
+        note: use sparingly
+
+steps:
+  - section: Blanch (don't skip)
+    items:
+      - text: Bring a large pot of water to a boil. Boil the pork for 5 minutes. Drain and rinse thoroughly.
+  - section: Caramelize and brown
+    items:
+      - text: In a pan, melt the sugar over medium heat until it is a deep amber colour.
+        details:
+          - "With granulated sugar: use medium to medium-low heat, don't stir with a spoon at first, let the bottom layer melt, then swirl the pan gently."
+          - It goes from dry crystals to wet clumps to clear syrup to golden/amber caramel. Granulated sugar may get there slightly faster than rock sugar.
+          - "If it smokes or turns very dark brown or black, it's burnt: throw it out and start again."
+      - text: Carefully add the pork (it will splatter). Brown it well on several sides, in batches.
+  - section: Deglaze and build the braise
+    items:
+      - text: Add the ginger and garlic and cook for 1 minute.
+        details:
+          - The order differs between source versions; see Open questions.
+      - text: Deglaze with the Shaoxing wine and reduce for 2–3 minutes.
+      - text: Add the dark soy, light soy, oyster sauce, broth, star anise, cassia/cinnamon and bay leaves. Bring just to a simmer.
+        details:
+          - "When to add the Sichuan peppercorns and scallions: {TBD} (the source only says \"spices\" / \"for the braise\")."
+  - section: Slow cook
+    items:
+      - text: Transfer everything to the slow cooker.
+      - text: Cook on **High for 3–4 h**.
+        details:
+          - The source says 3 h gives pork that is tender but still sliceable, 4 h is better for bao, and beyond 5 h on High the belly may start to fall apart.
+          - The original version said Low for 7–8 h.
+          - "Go by doneness, not the clock: a skewer or chopstick should slide into the pork with almost no resistance."
+          - "Second doneness check: {TBD} (cut off in the screenshot)."
+          - The pork should almost collapse but still hold together.
+  - section: Restaurant finish (most important)
+    items:
+      - text: Carefully remove the pork.
+      - text: Strain the liquid into the widest saucepan you have.
+      - text: Reduce over high heat (8–9 out of 10) at a strong boil, not a simmer, for about 20–40 minutes, until it has reduced by about 60–70%. Stir every minute or two, more often as it thickens.
+        details:
+          - Foaming and spitting are normal.
+          - It's done when it's thick and syrupy and coats the back of a spoon like maple syrup, running off it slowly.
+          - "Once it starts coating the spoon, don't walk away: it can go from perfect to too thick in a couple of minutes. Don't let it turn sticky like candy."
+          - If it gets too thick, whisk in a splash of hot water or chicken broth.
+      - text: "Whisk in the sesame oil. Taste: it should be salty, sweet and rich, with wine aroma and ginger in the background."
+        details:
+          - Adjust with light soy (1 tbsp at a time) or sugar if needed.
+      - text: Return the pork to the glaze for 5–10 minutes.
+  - section: Bao assembly
+    items:
+      - text: "Warm the bao (how: {TBD})."
+      - text: "Fill each bun in this order: pork belly, a spoonful of glaze, pickled cucumber, coriander, spring onion, peanuts (optional)."
+
+notes:
+  - The reduction is the biggest flavour factor. A slow cooker can't evaporate enough liquid to make the lacquered glaze, and much of the "restaurant taste" comes from that concentrated glaze rather than from adding more soy or spices up front.
+  - The light soy seasons the dish; the dark soy mainly adds colour. Too much dark soy makes the sauce harsh, slightly bitter and overly dark.
+  - With salted broth, taste after reducing before adding any more soy. It's easy to add more at the end but impossible to remove.
+  - More than 5 star anise can taste medicinal.
+  - Flank is leaner than belly. Cook the two together rather than separately; the fat rendered from the belly keeps the flank moist.
+  - "Upgrades the source suggests: premium light soy (Pearl River Bridge Superior or Lee Kum Kee Premium), rock sugar instead of brown, chicken stock instead of water, cassia instead of regular cinnamon, fresh bao."
+  - The source describes the result as deeply soy-braised, glossy rather than watery, tender without shredding, rich with gelatin, and balanced between sweet and umami.
+
+tables:
+  - title: Quantity versions (from source)
+    columns: [Ingredient, Original (1–1.2 kg), Scaled (2.5 kg), '"Pushed" (2.5 kg)', Salted broth (2.5 kg)]
+    rows:
+      - [Pork belly, 1–1.2 kg skin-on, 2.5 kg, null, 2.5 kg]
+      - [Dark soy, 3 tbsp, 7 tbsp, 7 tbsp, 7 tbsp]
+      - [Light soy, 4 tbsp, 10 tbsp (150 ml), 14 tbsp (210 ml), 10–11 tbsp]
+      - [Shaoxing wine, 150 ml, 375 ml, 500 ml, 500 ml]
+      - [Rock sugar, 60 g (or brown sugar), 150 g, 180–200 g, 180–200 g]
+      - [Ginger, 40 g, 80 g, 100–120 g, 100 g]
+      - [Garlic, 5 cloves, 10 cloves, 12–15 cloves, 12 cloves]
+      - [Star anise, "2", "5", "5", "5"]
+      - [Cinnamon/cassia, 1 stick, 2 sticks, 2 sticks, 2 sticks]
+      - [Bay leaves (opt.), "2", "3", null, null]
+      - [Sichuan peppercorns (opt.), 1 tsp, 2 tsp, null, null]
+      - [Chicken stock, 500 ml unsalted (or water), 1.2 L unsalted, ~1.2 L, 1.2 L salted]
+      - [Oyster sauce, 1 tbsp, 2½ tbsp, 3 tbsp, null]
+      - [Sesame oil, 1 tsp, 2 tsp, null, null]
+      - [Scallions, null, null, 2–3 whole, null]
+    footnote: '"—" means not mentioned in that version.'
+
+open_questions:
+  - Oyster sauce, sesame oil, bay leaves, Sichuan peppercorns and scallions aren't in the salted-broth list. Are they still used, and at the "pushed" or scaled quantities?
+  - "Ginger and garlic: cook them for 1 min before the wine (scaled method), or add them together with the wine and reduce for 2–3 min (original method)?"
+  - When do the Sichuan peppercorns and scallions go in?
+  - "Cook time actually used on 2026-07-24: 3 h or 4 h on High? How did it turn out?"
+  - "Some source text was cut off: the end of the 3–4 h answer (second doneness check and the rest of the reduction sentence), and possibly a screenshot between that answer and the salted-broth message."
+  - Hoisin is listed for serving but isn't part of the assembly order. Where does it go?
+  - "Quick pickled cucumber recipe: TBD."
+  - "How to warm the bao: TBD."
+  - "Exact pork split used (belly vs flank): TBD."
+
+changelog:
+  - date: 2026-10-11
+    text: created from ChatGPT conversation screenshots (2026-07-24).
+  - date: 2026-10-11
+    text: moved to structured data (recipe.yaml); README.md is now generated.
