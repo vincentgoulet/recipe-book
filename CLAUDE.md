@@ -10,6 +10,8 @@ Recipes live in `recipes/<kebab-case-title>.md`, one file per recipe, built from
 - **Unit conversions** only when exact (e.g. 1 tbsp = 15 ml); keep the original in parentheses. No guessing for cup-to-gram conversions of ingredients.
 - **Recipes are never final.** `status` is `draft`, `in-progress`, or `tested` — never `final`. New notes merge into the existing file; contradictions with earlier notes go to **Open questions** rather than silently overwriting.
 - **Keep the raw input.** Append each drop of source notes verbatim under **Source notes**, dated, and add a **Changelog** line. Bump `updated`.
+- **Image/file sources** (screenshots, photos, PDFs) are saved as-is in `recipes/sources/<recipe-slug>/` and linked from **Source notes**, rather than transcribed. Text that is cut off or illegible in them is marked `TBD`, never guessed.
+- **Multiple versions in one source** (e.g. original vs scaled quantities): use the latest version for Ingredients, keep the others in a **Quantity versions** table under Notes, and put any conflicts in **Open questions**.
 - Leave template sections in place with `TBD` even when empty.
 
 ## Git
