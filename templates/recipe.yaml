@@ -1,5 +1,5 @@
 # Recipe data. Copy to recipes/<slug>/recipe.yaml, then run: python3 scripts/render.py
-# Rule: never extrapolate. Anything not in the source stays null / empty — it renders as TBD.
+# Current truth only: never extrapolate, never keep history. Unknown = null / empty — renders as TBD.
 
 title: null
 status: draft            # draft | in-progress | tested — never "final"
@@ -9,17 +9,7 @@ time:
   prep: null
   cook: null
   total: null
-created: null            # YYYY-MM-DD
 updated: null            # YYYY-MM-DD
-
-sources: []
-#  - date: YYYY-MM-DD
-#    description: where it came from (person, URL, book, chat, own notes)
-#    text: |              # verbatim text notes, if any
-#      ...
-#    files:               # verbatim files kept in recipes/<slug>/sources/
-#      - path: sources/example.png
-#        caption: what this file covers
 
 summary: null
 
@@ -46,7 +36,3 @@ steps: []
 notes: []               # only if genuinely useful; omitted from output when empty
 
 open_questions: []
-
-changelog: []
-#  - date: YYYY-MM-DD
-#    text: created from ...

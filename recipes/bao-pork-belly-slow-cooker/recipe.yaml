@@ -6,25 +6,7 @@ time:
   prep: null
   cook: up to 4 h on High + {TBD} stovetop
   total: null
-created: 2026-10-11
 updated: 2026-10-12
-
-sources:
-  - date: 2026-10-12
-    description: own notes
-    text: |
-      i used cinnamon and cooked 4 hours at most.
-  - date: 2026-07-24
-    description: ChatGPT conversation (screenshots)
-    files:
-      - path: sources/chatgpt-2026-07-24-01.png
-      - path: sources/chatgpt-2026-07-24-02.png
-      - path: sources/chatgpt-2026-07-24-03.png
-      - path: sources/chatgpt-2026-07-24-04.png
-      - path: sources/chatgpt-2026-07-24-05.png
-      - path: sources/chatgpt-2026-07-24-06.png
-      - path: sources/chatgpt-2026-07-24-07.png
-      - path: sources/chatgpt-2026-07-24-08.png
 
 summary: Pork belly and flank braised in soy, Shaoxing wine and spices, finished in its own reduced glaze.
 
@@ -105,14 +87,6 @@ steps:
       - text: "Warm the bao ({TBD})."
       - text: "Fill each: pork, a spoonful of glaze, pickled cucumber, coriander, spring onion, peanuts."
 
-notes: []
-
 open_questions:
   - "Quantities for serving items: TBD."
   - "Pickled cucumber recipe: TBD."
-
-changelog:
-  - date: 2026-10-11
-    text: created from ChatGPT conversation (2026-07-24).
-  - date: 2026-10-12
-    text: streamlined to the version actually cooked (cinnamon, granulated sugar, salted broth, up to 4 h High).

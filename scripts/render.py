@@ -45,10 +45,6 @@ def ingredient_line(i):
     return f"- {line}"
 
 
-def cell(x):
-    return "—" if x is None else str(x).replace("|", "\\|")
-
-
 def render(r, slug):
     status = r.get("status") or "draft"
     if status not in STATUSES:
@@ -58,7 +54,7 @@ def render(r, slug):
     out += [
         f"**Status:** {status} · **Servings:** {val(r.get('servings'))}  ",
         f"**Prep:** {val(t.get('prep'))} · **Cook:** {val(t.get('cook'))} · **Total:** {val(t.get('total'))}  ",
-        f"**Tags:** {', '.join(r.get('tags') or []) or TBD} · **Created:** {val(r.get('created'))} · **Updated:** {val(r.get('updated'))}",
+        f"**Tags:** {', '.join(r.get('tags') or []) or TBD} · **Updated:** {val(r.get('updated'))}",
         "",
         "> Living recipe: incomplete by design and never final. `TBD` means not provided yet.",
         "",
@@ -95,32 +91,8 @@ def render(r, slug):
 
     if r.get("notes"):
         out += ["## Notes", "", *bullets(r["notes"]), ""]
-    for tb in r.get("tables") or []:
-        cols = tb["columns"]
-        out += [f"### {tb['title']}", "", "| " + " | ".join(cols) + " |", "|" + "---|" * len(cols)]
-        out += ["| " + " | ".join(cell(c) for c in row) + " |" for row in tb.get("rows") or []]
-        if tb.get("footnote"):
-            out += ["", tb["footnote"]]
-        out.append("")
-
     out += ["## Open questions", "", *bullets(r.get("open_questions")), ""]
 
-    out += ["## Sources", ""]
-    srcs = r.get("sources") or []
-    if not srcs:
-        out += [f"- {TBD}", ""]
-    for s in srcs:
-        out += [f"### {val(s.get('date'))}: {val(s.get('description'))}", ""]
-        if s.get("text"):
-            out += ["> " + l if l else ">" for l in s["text"].rstrip().splitlines()] + [""]
-        files = s.get("files") or []
-        for f in files:
-            out.append(f"- [{Path(f['path']).name}]({f['path']})" + (f": {f['caption']}" if f.get("caption") else ""))
-        if files:
-            out.append("")
-
-    out += ["## Changelog", ""]
-    out += [f"- {val(c.get('date'))}: {val(c.get('text'))}" for c in r.get("changelog") or []] or [f"- {TBD}"]
     return "\n".join(out).rstrip() + "\n"
 
 

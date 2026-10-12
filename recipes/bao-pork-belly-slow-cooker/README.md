@@ -4,7 +4,7 @@
 
 **Status:** draft · **Servings:** 20–25 bao  
 **Prep:** TBD · **Cook:** up to 4 h on High + TBD stovetop · **Total:** TBD  
-**Tags:** pork, slow-cooker, braise, bao · **Created:** 2026-10-11 · **Updated:** 2026-10-12
+**Tags:** pork, slow-cooker, braise, bao · **Updated:** 2026-10-12
 
 > Living recipe: incomplete by design and never final. `TBD` means not provided yet.
 
@@ -73,25 +73,3 @@ Pork belly and flank braised in soy, Shaoxing wine and spices, finished in its o
 
 - Quantities for serving items: TBD.
 - Pickled cucumber recipe: TBD.
-
-## Sources
-
-### 2026-10-12: own notes
-
-> i used cinnamon and cooked 4 hours at most.
-
-### 2026-07-24: ChatGPT conversation (screenshots)
-
-- [chatgpt-2026-07-24-01.png](sources/chatgpt-2026-07-24-01.png)
-- [chatgpt-2026-07-24-02.png](sources/chatgpt-2026-07-24-02.png)
-- [chatgpt-2026-07-24-03.png](sources/chatgpt-2026-07-24-03.png)
-- [chatgpt-2026-07-24-04.png](sources/chatgpt-2026-07-24-04.png)
-- [chatgpt-2026-07-24-05.png](sources/chatgpt-2026-07-24-05.png)
-- [chatgpt-2026-07-24-06.png](sources/chatgpt-2026-07-24-06.png)
-- [chatgpt-2026-07-24-07.png](sources/chatgpt-2026-07-24-07.png)
-- [chatgpt-2026-07-24-08.png](sources/chatgpt-2026-07-24-08.png)
-
-## Changelog
-
-- 2026-10-11: created from ChatGPT conversation (2026-07-24).
-- 2026-10-12: streamlined to the version actually cooked (cinnamon, granulated sugar, salted broth, up to 4 h High).
