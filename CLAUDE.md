@@ -22,7 +22,7 @@ After any change to a `recipe.yaml`, run `python3 scripts/render.py` and commit 
 - **Unit conversions** only when exact (e.g. 1 tbsp = 15 ml); keep the original in parentheses. No guessing for cup-to-gram conversions of ingredients.
 - **Recipes are never final.** `status` is `draft`, `in-progress`, or `tested` — never `final` (render.py rejects it). New notes merge into the existing data; contradictions with earlier notes go to `open_questions` rather than silently overwriting.
 - **Keep the raw input.** Add each drop of source notes under `sources` (verbatim `text`, and/or `files` saved in `recipes/<slug>/sources/`), with a date, plus a `changelog` entry. Bump `updated`. Text cut off or illegible in a file source is `TBD`, never guessed.
-- **Multiple versions in one source** (e.g. original vs scaled quantities): use the latest version for `ingredients`, keep the others in a `tables` entry, and put any conflicts in `open_questions`.
+- **Streamline, don't maximize.** The recipe is the one version actually made, stated plainly. The user's own reports (what they used, how long they cooked) replace source suggestions outright: no alternatives, ranges-of-options, "the source says" commentary, or provenance notes inline. When a source offers several versions or options, keep only the latest/chosen one; resolve conflicts by taking the latest, and ask only when it truly matters. Everything else stays recoverable in `sources`.
 
 ## Git
 

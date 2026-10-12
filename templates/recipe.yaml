@@ -43,14 +43,7 @@ steps: []
 #        details: []       # sub-points: tips, cues, alternatives
 #      - gap: "missing step(s) between blanching and browning"   # explicit gap marker
 
-notes: []
-
-tables: []               # extra reference tables, e.g. quantity versions from the source
-#  - title: Quantity versions
-#    columns: [Ingredient, Version A, Version B]
-#    rows:
-#      - [Dark soy, 3 tbsp, 7 tbsp]
-#    footnote: null
+notes: []               # only if genuinely useful; omitted from output when empty
 
 open_questions: []
 

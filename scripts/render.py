@@ -33,7 +33,7 @@ def bullets(items):
 
 def ingredient_line(i):
     if i.get("qty") in (None, ""):
-        line = f"{val(i.get('name'))} *(qty {TBD})*"
+        line = val(i.get("name"))
     else:
         line = " ".join(p for p in (val(i["qty"]), i.get("unit") or "", val(i.get("name"))) if p)
     if i.get("prep"):
@@ -93,7 +93,8 @@ def render(r, slug):
             out += [f"{pad}- {val(d)}" for d in st.get("details") or []]
         out.append("")
 
-    out += ["## Notes", "", *bullets(r.get("notes")), ""]
+    if r.get("notes"):
+        out += ["## Notes", "", *bullets(r["notes"]), ""]
     for tb in r.get("tables") or []:
         cols = tb["columns"]
         out += [f"### {tb['title']}", "", "| " + " | ".join(cols) + " |", "|" + "---|" * len(cols)]
@@ -112,9 +113,11 @@ def render(r, slug):
         out += [f"### {val(s.get('date'))}: {val(s.get('description'))}", ""]
         if s.get("text"):
             out += ["> " + l if l else ">" for l in s["text"].rstrip().splitlines()] + [""]
-        for f in s.get("files") or []:
+        files = s.get("files") or []
+        for f in files:
             out.append(f"- [{Path(f['path']).name}]({f['path']})" + (f": {f['caption']}" if f.get("caption") else ""))
-        out.append("")
+        if files:
+            out.append("")
 
     out += ["## Changelog", ""]
     out += [f"- {val(c.get('date'))}: {val(c.get('text'))}" for c in r.get("changelog") or []] or [f"- {TBD}"]
