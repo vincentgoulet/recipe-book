@@ -36,3 +36,7 @@ steps: []
 notes: []               # only if genuinely useful; omitted from output when empty
 
 open_questions: []
+
+changelog: []           # kept in the data, never rendered
+#  - date: YYYY-MM-DD
+#    text: what changed

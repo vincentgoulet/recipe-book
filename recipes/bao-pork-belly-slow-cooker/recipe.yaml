@@ -1,10 +1,10 @@
 title: Slow cooker braised pork belly for bao
 status: draft
 tags: [pork, slow-cooker, braise, bao]
-servings: 20–25 bao
+servings: 20 bao
 time:
   prep: null
-  cook: up to 4 h on High + {TBD} stovetop
+  cook: 4 h on High + {TBD} stovetop
   total: null
 updated: 2026-10-12
 
@@ -23,17 +23,17 @@ ingredients:
       - qty: "2.5"
         unit: kg
         name: pork belly + flank
-        prep: belly in 4–5 cm cubes, flank in 5–6 cm pieces
+        prep: belly in 4 cm cubes, flank in 5 cm pieces
       - qty: "7"
         unit: tbsp
         name: dark soy sauce
-      - qty: "10–11"
+      - qty: "10"
         unit: tbsp
         name: light soy sauce
       - qty: "500"
         unit: ml
         name: Shaoxing wine
-      - qty: "180–200"
+      - qty: "180"
         unit: g
         name: granulated sugar
       - qty: "100"
@@ -70,18 +70,18 @@ steps:
   - section: Braise
     items:
       - text: Boil the pork for 5 minutes. Drain and rinse.
-      - text: In a pan over medium to medium-low heat, melt the sugar without stirring (swirl the pan) until deep amber.
+      - text: In a pan over medium heat, melt the sugar without stirring (swirl the pan) until deep amber.
       - text: Add the pork carefully (it splatters) and brown well on several sides, in batches.
       - text: Add the ginger and garlic; cook 1 minute.
       - text: Deglaze with the Shaoxing wine.
       - text: Add the soy sauces, oyster sauce, broth, star anise and cinnamon. Bring just to a simmer.
-      - text: Transfer to the slow cooker. Cook on High for up to 4 h, until a chopstick slides in with almost no resistance.
+      - text: Transfer to the slow cooker. Cook on High for 4 h, until a chopstick slides in with almost no resistance.
   - section: Glaze
     items:
       - text: Remove the pork. Strain the liquid into a wide saucepan.
-      - text: Boil hard (8–9/10), stirring every minute or two, about 20–40 minutes, until reduced by 60–70% and it coats a spoon like maple syrup. Don't let it go candy-thick; loosen with a splash of hot water if it does.
+      - text: Boil on max heat, stirring often, until it coats a spoon like maple syrup. Don't let it go candy-thick; loosen with a splash of hot water if it does.
       - text: Stir in the sesame oil. Taste; add light soy 1 tbsp at a time if needed.
-      - text: Return the pork to the glaze for 5–10 minutes.
+      - text: Return the pork to the glaze for 5 minutes.
   - section: Serve
     items:
       - text: "Warm the bao ({TBD})."
@@ -90,3 +90,11 @@ steps:
 open_questions:
   - "Quantities for serving items: TBD."
   - "Pickled cucumber recipe: TBD."
+
+changelog:
+  - date: 2026-10-11
+    text: created from ChatGPT conversation (2026-07-24).
+  - date: 2026-10-12
+    text: streamlined to the version actually cooked (cinnamon, granulated sugar, salted broth, 4 h High).
+  - date: 2026-10-12
+    text: ranges replaced by fixed values (lower bound); glaze reduced on max heat with no set time.
