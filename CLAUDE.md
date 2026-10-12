@@ -8,7 +8,8 @@ recipes/<slug>/recipe.yaml         the recipe data — the only thing to edit
 recipes/<slug>/sources/            raw source files (screenshots, photos, PDFs), kept as-is
 recipes/<slug>/README.md           GENERATED markdown — never edit by hand
 recipes/README.md                  GENERATED index
-scripts/render.py                  YAML → markdown (`python3 scripts/render.py`, `--check` to verify)
+scripts/render.py                  YAML → markdown: whole book (`python3 scripts/render.py`, `--check` to verify)
+                                   or one file (`python3 scripts/render.py FILE.yaml [-o OUT.md]`)
 ```
 
 After any change to a `recipe.yaml`, run `python3 scripts/render.py` and commit the YAML and generated files together. Output layout and formatting live only in `render.py`.

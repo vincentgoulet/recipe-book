@@ -4,9 +4,11 @@
 Usage:
   python3 scripts/render.py           # render everything
   python3 scripts/render.py --check   # exit 1 if any rendered file is out of date
+  python3 scripts/render.py FILE.yaml [-o OUT.md]   # convert one file (stdout by default)
 
 Missing data (null / empty) renders as TBD. The renderer never fills anything in.
 """
+import argparse
 import sys
 from pathlib import Path
 
@@ -127,7 +129,23 @@ def index(entries):
 
 
 def main():
-    check = "--check" in sys.argv[1:]
+    ap = argparse.ArgumentParser(description="Render recipe YAML to markdown.")
+    ap.add_argument("file", nargs="?", type=Path, help="convert a single recipe.yaml instead of the whole book")
+    ap.add_argument("-o", "--output", type=Path, help="with FILE: write here instead of stdout")
+    ap.add_argument("--check", action="store_true", help="exit 1 if any rendered file is out of date")
+    args = ap.parse_args()
+
+    if args.file:
+        r = yaml.safe_load(args.file.read_text()) or {}
+        slug = args.file.parent.name if args.file.name == "recipe.yaml" else args.file.stem
+        md = render(r, slug)
+        if args.output:
+            args.output.write_text(md)
+        else:
+            sys.stdout.write(md)
+        return
+
+    check = args.check
     outputs, entries = {}, []
     for y in sorted(RECIPES.glob("*/recipe.yaml")):
         slug = y.parent.name
