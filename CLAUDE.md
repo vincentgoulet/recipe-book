@@ -1,28 +1,27 @@
 # Recipe book
 
-Recipe **data** and **output** are separate:
+## Principles (persistent)
+
+1. **Current truth only.** Each recipe is the single most truthful, up-to-date version. Nothing else is kept: no history, changelogs, alternatives, earlier versions, option lists, or source commentary.
+2. **Lean.** Strip anything not current. Short, plain statements. If something is superseded, delete it; don't annotate it.
+3. **The user's reality wins.** What the user actually used or did replaces any suggestion from a source, outright.
+4. **Never extrapolate.** Never invent ingredients, quantities, temperatures, times, steps, or servings. Unknown stays `null` / `{TBD}` (rendered `TBD`); missing steps get a `gap:` item.
+5. **Convert, always.** Any input (notes, chats, screenshots) is reshaped into the data format. Conversion may restructure and condense; it may not add facts.
+6. **Never final.** `status` is `draft`, `in-progress`, or `tested`; never `final`.
+7. **Git is the history.** Superseded content is recoverable from git, so the working tree holds only the current state.
+
+## Layout
 
 ```
-templates/recipe.yaml              blank data template (field reference)
-recipes/<slug>/recipe.yaml         the recipe data — the only thing to edit
-recipes/<slug>/sources/            raw source files (screenshots, photos, PDFs), kept as-is
-recipes/<slug>/README.md           GENERATED markdown — never edit by hand
-recipes/README.md                  GENERATED index
-scripts/render.py                  YAML → markdown: whole book (`python3 scripts/render.py`, `--check` to verify)
-                                   or one file (`python3 scripts/render.py FILE.yaml [-o OUT.md]`)
+templates/recipe.yaml          blank data template
+recipes/<slug>/recipe.yaml     recipe data: the only thing to edit
+recipes/<slug>/README.md       GENERATED, never edit by hand
+recipes/README.md              GENERATED index
+scripts/render.py              YAML → markdown: `python3 scripts/render.py` (all), `--check`,
+                               or `python3 scripts/render.py FILE.yaml [-o OUT.md]`
 ```
 
-After any change to a `recipe.yaml`, run `python3 scripts/render.py` and commit the YAML and generated files together. Output layout and formatting live only in `render.py`.
-
-## Rules for adding or updating recipes
-
-- **Never extrapolate.** Do not invent ingredients, quantities, temperatures, times, steps, or servings. If it isn't in the provided notes, it isn't in the recipe.
-- **Convert, don't create.** Always reshape the provided info into the data format (split into ingredients/steps, normalize wording, order sections). Conversion may restructure; it may not add facts.
-- **Mark gaps explicitly.** Unknown fields stay `null` / empty (rendered as `TBD`). Inline unknowns use `{TBD}`. Missing steps get a `gap:` item. Ambiguities go in `open_questions`.
-- **Unit conversions** only when exact (e.g. 1 tbsp = 15 ml); keep the original in parentheses. No guessing for cup-to-gram conversions of ingredients.
-- **Recipes are never final.** `status` is `draft`, `in-progress`, or `tested` — never `final` (render.py rejects it). New notes merge into the existing data; contradictions with earlier notes go to `open_questions` rather than silently overwriting.
-- **Keep the raw input.** Add each drop of source notes under `sources` (verbatim `text`, and/or `files` saved in `recipes/<slug>/sources/`), with a date, plus a `changelog` entry. Bump `updated`. Text cut off or illegible in a file source is `TBD`, never guessed.
-- **Streamline, don't maximize.** The recipe is the one version actually made, stated plainly. The user's own reports (what they used, how long they cooked) replace source suggestions outright: no alternatives, ranges-of-options, "the source says" commentary, or provenance notes inline. When a source offers several versions or options, keep only the latest/chosen one; resolve conflicts by taking the latest, and ask only when it truly matters. Everything else stays recoverable in `sources`.
+After any change to a `recipe.yaml`: update `updated`, run `python3 scripts/render.py`, commit YAML and generated files together. Open questions list only current gaps worth resolving; remove them once answered.
 
 ## Git
 
