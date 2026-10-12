@@ -7,9 +7,13 @@ time:
   cook: 3–4 h on High (slow cooker) + {TBD} stovetop
   total: null
 created: 2026-10-11
-updated: 2026-10-11
+updated: 2026-10-12
 
 sources:
+  - date: 2026-10-12
+    description: own notes
+    text: |
+      i used cinnamon and cooked 4 hours at most.
   - date: 2026-07-24
     description: ChatGPT conversation (screenshots added 2026-10-11)
     files:
@@ -81,6 +85,7 @@ ingredients:
         name: star anise
       - qty: "2"
         name: cassia sticks (or cinnamon sticks)
+        note: cinnamon was used on 2026-07-24
       - qty: "1.2"
         unit: L
         name: salted chicken broth
@@ -153,6 +158,7 @@ steps:
       - text: Transfer everything to the slow cooker.
       - text: Cook on **High for 3–4 h**.
         details:
+          - "Used on 2026-07-24: at most 4 h (the top of the suggested range)."
           - The source says 3 h gives pork that is tender but still sliceable, 4 h is better for bao, and beyond 5 h on High the belly may start to fall apart.
           - The original version said Low for 7–8 h.
           - "Go by doneness, not the clock: a skewer or chopstick should slide into the pork with almost no resistance."
@@ -211,7 +217,7 @@ open_questions:
   - Oyster sauce, sesame oil, bay leaves, Sichuan peppercorns and scallions aren't in the salted-broth list. Are they still used, and at the "pushed" or scaled quantities?
   - "Ginger and garlic: cook them for 1 min before the wine (scaled method), or add them together with the wine and reduce for 2–3 min (original method)?"
   - When do the Sichuan peppercorns and scallions go in?
-  - "Cook time actually used on 2026-07-24: 3 h or 4 h on High? How did it turn out?"
+  - "2026-07-24 cook: at most 4 h. Exact time and how it turned out: TBD."
   - "Some source text was cut off: the end of the 3–4 h answer (second doneness check and the rest of the reduction sentence), and possibly a screenshot between that answer and the salted-broth message."
   - Hoisin is listed for serving but isn't part of the assembly order. Where does it go?
   - "Quick pickled cucumber recipe: TBD."
@@ -223,3 +229,5 @@ changelog:
     text: created from ChatGPT conversation screenshots (2026-07-24).
   - date: 2026-10-11
     text: moved to structured data (recipe.yaml); README.md is now generated.
+  - date: 2026-10-12
+    text: added notes from the 2026-07-24 cook (cinnamon, at most 4 h).

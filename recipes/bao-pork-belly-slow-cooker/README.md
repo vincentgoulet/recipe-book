@@ -4,7 +4,7 @@
 
 **Status:** draft · **Servings:** 20–25 bao (2.5 kg batch); 8–10 bao (original 1–1.2 kg version)  
 **Prep:** TBD · **Cook:** 3–4 h on High (slow cooker) + TBD stovetop · **Total:** TBD  
-**Tags:** pork, slow-cooker, braise, bao, chinese, taiwanese · **Created:** 2026-10-11 · **Updated:** 2026-10-11
+**Tags:** pork, slow-cooker, braise, bao, chinese, taiwanese · **Created:** 2026-10-11 · **Updated:** 2026-10-12
 
 > Living recipe: incomplete by design and never final. `TBD` means not provided yet.
 
@@ -33,7 +33,7 @@ Taiwanese/Japanese kakuni-style braised pork belly for bao, aiming for a restaur
 - 100 g fresh ginger, sliced
 - 12 cloves garlic, crushed
 - 5 star anise
-- 2 cassia sticks (or cinnamon sticks)
+- 2 cassia sticks (or cinnamon sticks) — cinnamon was used on 2026-07-24
 - 1.2 L salted chicken broth — just enough to come about ¾ of the way up / mostly cover the pork
 - 3 tbsp oyster sauce — the salted-broth list doesn't mention it; see Open questions
 - 2 tsp toasted sesame oil, added after reducing — not in the salted-broth list; see Open questions
@@ -76,6 +76,7 @@ Taiwanese/Japanese kakuni-style braised pork belly for bao, aiming for a restaur
 
 7. Transfer everything to the slow cooker.
 8. Cook on **High for 3–4 h**.
+   - Used on 2026-07-24: at most 4 h (the top of the suggested range).
    - The source says 3 h gives pork that is tender but still sliceable, 4 h is better for bao, and beyond 5 h on High the belly may start to fall apart.
    - The original version said Low for 7–8 h.
    - Go by doneness, not the clock: a skewer or chopstick should slide into the pork with almost no resistance.
@@ -137,7 +138,7 @@ Taiwanese/Japanese kakuni-style braised pork belly for bao, aiming for a restaur
 - Oyster sauce, sesame oil, bay leaves, Sichuan peppercorns and scallions aren't in the salted-broth list. Are they still used, and at the "pushed" or scaled quantities?
 - Ginger and garlic: cook them for 1 min before the wine (scaled method), or add them together with the wine and reduce for 2–3 min (original method)?
 - When do the Sichuan peppercorns and scallions go in?
-- Cook time actually used on 2026-07-24: 3 h or 4 h on High? How did it turn out?
+- 2026-07-24 cook: at most 4 h. Exact time and how it turned out: TBD.
 - Some source text was cut off: the end of the 3–4 h answer (second doneness check and the rest of the reduction sentence), and possibly a screenshot between that answer and the salted-broth message.
 - Hoisin is listed for serving but isn't part of the assembly order. Where does it go?
 - Quick pickled cucumber recipe: TBD.
@@ -145,6 +146,11 @@ Taiwanese/Japanese kakuni-style braised pork belly for bao, aiming for a restaur
 - Exact pork split used (belly vs flank): TBD.
 
 ## Sources
+
+### 2026-10-12: own notes
+
+> i used cinnamon and cooked 4 hours at most.
+
 
 ### 2026-07-24: ChatGPT conversation (screenshots added 2026-10-11)
 
@@ -161,3 +167,4 @@ Taiwanese/Japanese kakuni-style braised pork belly for bao, aiming for a restaur
 
 - 2026-10-11: created from ChatGPT conversation screenshots (2026-07-24).
 - 2026-10-11: moved to structured data (recipe.yaml); README.md is now generated.
+- 2026-10-12: added notes from the 2026-07-24 cook (cinnamon, at most 4 h).
